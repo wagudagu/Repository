@@ -1,10 +1,28 @@
 <div class="row no-gutters">
-  <div class="col-md-2"></div>
-  <div class="col-md-8 mt-12 text-center" style="padding-top: 10%">
-    <h1> Not so very long title</h1>
+  <div class="col-md-4 boxed"></div>
+  <div class="col-md-4 text-center boxed" style="padding-top: 5%">
+    <h1> Sunny day </h1>
     <img class="img-fluid" src="assets/mL.png">
     <h3> Fun Page</h3>
+    <p> (coming soon..)</p>
   </div>
-  <div class="col-md-2"></div>
+
+  <div class="col-md-4 boxed p-1">
+    <div class="card">
+      <div class="card-header"> Exciting events</div>
+      <div class="card-body">
+        <p>Room temperature</p>
+        <p> temp = {{x}}°C</p>
+        <p class="text-right">
+          <button class="btn btn-outline-warning mr-1" (click)="increaseTemperature()">+1°C</button>
+          <button class="btn btn-outline-info" (click)="decreaseTemperature()">-1°C</button>
+        </p>
+      </div>
+      <div class="card-footer"> Today is Sat Oct 12th; user: {{user}}
+      </div>
+
+    </div>
+
+  </div>
 </div>
 

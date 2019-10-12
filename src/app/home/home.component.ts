@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements OnInit {
+  user = 'Wu Xilao';
+  x = 10;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  increaseTemperature() {
+    this.x = this.x + 1;
+  }
+
+  decreaseTemperature() {
+    this.x = this.x - 1;
   }
 
 }

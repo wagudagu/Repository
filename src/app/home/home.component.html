@@ -9,16 +9,14 @@
 
   <div class="col-md-4 boxed p-1">
     <div class="card">
-      <div class="card-header"> Exciting events</div>
+      <div class="card-header"> header</div>
       <div class="card-body">
-        <p>Room temperature</p>
-        <p> temp = {{x}}°C</p>
-        <p class="text-right">
-          <button class="btn btn-outline-warning mr-1" (click)="increaseTemperature()">+1°C</button>
-          <button class="btn btn-outline-info" (click)="decreaseTemperature()">-1°C</button>
-        </p>
+        champion: {{my_champion}}
       </div>
-      <div class="card-footer"> Today is Sat Oct 12th; user: {{user}}
+      <div class="card-footer">
+        <button class="btn btn-outline-info"
+                (click)="doIt()">Change champion
+        </button>
       </div>
 
     </div>

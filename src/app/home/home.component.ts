@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements OnInit {
+  my_champion = 'Panteon!';
   user = 'Wu Xilao';
   x = 10;
 
@@ -22,4 +23,11 @@ export class HomeComponent implements OnInit {
     this.x = this.x - 1;
   }
 
+  doIt() {
+    this.my_champion = 'Nasus';
+  }
+
+  fff() {
+
+  }
 }

@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements OnInit {
-  my_champion = 'Panteon!';
-  user = 'Wu Xilao';
+  my_champion = 'Panteon';
+  user = 'Wu Xilao!';
   x = 10;
 
   constructor() { }
@@ -27,7 +27,13 @@ export class HomeComponent implements OnInit {
     this.my_champion = 'Nasus';
   }
 
-  fff() {
+  championJax() {
+    this.my_champion = 'Jax';
+  }
 
+  //to jest funkcja która dostaje jeden argument: string (tzn. napis); można jej użyć z różnymi wartościami
+  //tego argumentu...
+  set_champion(champion_name: string) {
+    this.my_champion = champion_name;
   }
 }

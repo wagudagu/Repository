@@ -11,12 +11,16 @@
     <div class="card">
       <div class="card-header"> header</div>
       <div class="card-body">
-        champion: {{my_champion}}
+        champion: {{my_champion}} <br>
+        user: {{user}}
       </div>
       <div class="card-footer">
-        <button class="btn btn-outline-info"
-                (click)="doIt()">Change champion
+        <button class="btn btn-outline-info" (click)="doIt()">Nasus
         </button>
+        <button class="btn btn-outline-info" (click)="set_champion('Jax')">Jax </button>
+        <button class="btn btn-outline-info" (click)="set_champion('Veigar')">Veigar </button>
+        <button class="btn btn-outline-info" (click)="set_champion('Morgana')">Morgana </button>
+        <button class="btn btn-outline-info" (click)="set_champion('Lux')">Lux </button>
       </div>
 
     </div>

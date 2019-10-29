@@ -11,6 +11,7 @@ export class FormsComponent implements OnInit {
   ageint = 0;
   lucky_numbers: string;
   wynik: number;
+  pass: string;
 
 
   constructor() {

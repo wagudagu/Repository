@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   my_champion = 'Panteon';
+  new_champion = '';
   user = 'Wu Xilao!';
   x = 10;
 
@@ -33,7 +34,37 @@ export class HomeComponent implements OnInit {
 
   //to jest funkcja która dostaje jeden argument: string (tzn. napis); można jej użyć z różnymi wartościami
   //tego argumentu...
+
   set_champion(champion_name: string) {
     this.my_champion = champion_name;
   }
+
+  update_champion() {
+    if (this.new_champion.startsWith('Vei')) {
+      alert('Champions starting with "Vei" are banned!');
+    } else {
+      this.my_champion = this.new_champion;
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

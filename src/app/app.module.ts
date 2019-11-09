@@ -21,11 +21,11 @@ import {FormsModule} from "@angular/forms";
     GamesComponent,
     FormsComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+  ],
   providers: [MenuComponent],
   bootstrap: [AppComponent]
 })

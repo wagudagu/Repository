@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +11,8 @@ export class HomeComponent implements OnInit {
   user = 'Wu Xilao!';
   x = 10;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
@@ -34,6 +35,8 @@ export class HomeComponent implements OnInit {
 
   //to jest funkcja która dostaje jeden argument: string (tzn. napis); można jej użyć z różnymi wartościami
   //tego argumentu...
+  liczba: string;
+  liczbaff: string;
 
   set_champion(champion_name: string) {
     this.my_champion = champion_name;
@@ -46,6 +49,23 @@ export class HomeComponent implements OnInit {
       this.my_champion = this.new_champion;
     }
   }
+
+  check_parity() {
+    //sprawdzić czy this.liczba (zamieniona na number z string), jest parzysta czy nie
+    // można korzystać z (5 % 2) to reszta z dzielenia 5 przez 2
+    //jeśli jest parzysta, to dać alert "liczba parzysta"
+    let x = parseInt(this.liczba);
+    if (Number.isNaN(x)) {
+      alert('Input nie jest liczbą');
+      return;
+    }
+    if (x % 2 == 0) {
+      alert('Liczba parzysta');
+    } else {
+      alert('Liczba nieparzysta');
+    }
+  }
+
 }
 
 

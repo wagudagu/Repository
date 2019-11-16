@@ -4,11 +4,12 @@ import {HomeComponent} from './home/home.component';
 import {ContactComponent} from './contact/contact.component';
 import {GamesComponent} from "./games/games.component";
 import {FormsComponent} from "./forms/forms.component";
+import {KalkulatorComponent} from "./kalkulator/kalkulator.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'kalkulator', component: KalkulatorComponent },
   { path: 'games', component: GamesComponent },
   { path: 'forms', component: FormsComponent },
 ];

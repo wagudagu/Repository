@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { NiceFooterComponent } from './nice-footer/nice-footer.component';
 import { GamesComponent } from './games/games.component';
 import { FormsComponent } from './forms/forms.component';
+import { KalkulatorComponent } from './kalkulator/kalkulator.component';
 import {FormsModule} from "@angular/forms";
 
 @NgModule({
@@ -20,6 +21,7 @@ import {FormsModule} from "@angular/forms";
     NiceFooterComponent,
     GamesComponent,
     FormsComponent,
+    KalkulatorComponent,
   ],
   imports: [
     BrowserModule,

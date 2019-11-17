@@ -10,6 +10,8 @@ export class KalkulatorComponent implements OnInit {
   liczbaA: string;
   liczbaB: string;
   kwadrat = 0;
+  liczba1N =  0;
+  wynik1N = 0;
 
   constructor() {
   }
@@ -44,5 +46,14 @@ export class KalkulatorComponent implements OnInit {
     //   //kod wykonany jeśli wartość "value" >= 100
     //   return 200;
     // }
+  }
+
+
+  /**
+   * @returns suma liczb 1 + 2 + 3 + ... + liczba1N
+   */
+  computeSum1N(liczba1N: number) {
+    //todo: write me!
+    return 0;
   }
 }

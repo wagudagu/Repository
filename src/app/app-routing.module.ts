@@ -5,6 +5,7 @@ import {ContactComponent} from './contact/contact.component';
 import {GamesComponent} from "./games/games.component";
 import {FormsComponent} from "./forms/forms.component";
 import {KalkulatorComponent} from "./kalkulator/kalkulator.component";
+import {WonderViewComponent} from "./wonder-view/wonder-view.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'kalkulator', component: KalkulatorComponent },
   { path: 'games', component: GamesComponent },
   { path: 'forms', component: FormsComponent },
+  { path: 'wonder', component: WonderViewComponent },
 ];
 
 @NgModule({

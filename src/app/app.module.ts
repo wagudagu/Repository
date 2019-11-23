@@ -11,6 +11,7 @@ import { GamesComponent } from './games/games.component';
 import { FormsComponent } from './forms/forms.component';
 import { KalkulatorComponent } from './kalkulator/kalkulator.component';
 import {FormsModule} from "@angular/forms";
+import { WonderViewComponent } from './wonder-view/wonder-view.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {FormsModule} from "@angular/forms";
     GamesComponent,
     FormsComponent,
     KalkulatorComponent,
+    WonderViewComponent,
   ],
   imports: [
     BrowserModule,

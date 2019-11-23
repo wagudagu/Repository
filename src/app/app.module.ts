@@ -12,6 +12,7 @@ import { FormsComponent } from './forms/forms.component';
 import { KalkulatorComponent } from './kalkulator/kalkulator.component';
 import {FormsModule} from "@angular/forms";
 import { WonderViewComponent } from './wonder-view/wonder-view.component';
+import { AuctionComponent } from './zadania/auction/auction.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { WonderViewComponent } from './wonder-view/wonder-view.component';
     FormsComponent,
     KalkulatorComponent,
     WonderViewComponent,
+    AuctionComponent,
   ],
   imports: [
     BrowserModule,

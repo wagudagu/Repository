@@ -13,6 +13,7 @@
             <div class="col-md-8">
               <input type="text" class="form-control" id="liczba1N"
                      name="liczba1N" placeholder="(podaj liczbę)"
+                     (keyup)="wynik1N = computeSum1N(liczba1N)"
                      [(ngModel)]="liczba1N">
 
             </div>
@@ -28,6 +29,7 @@
       Wynik: {{wynik1N}}
     </div>
   </div>
+    <app-auction></app-auction>
 </div>
 
 <div class="col-md-6">

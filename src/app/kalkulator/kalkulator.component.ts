@@ -53,7 +53,11 @@ export class KalkulatorComponent implements OnInit {
    * @returns suma liczb 1 + 2 + 3 + ... + liczba1N
    */
   computeSum1N(liczba1N: number) {
-    //todo: write me!
-    return 0;
+    let suma = 0;
+    /// tu coś z pętlą for....
+    for(let x=1; x<=liczba1N; x++) {
+      suma += x;
+    }
+    return suma;
   }
 }

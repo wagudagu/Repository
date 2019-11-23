@@ -13,6 +13,7 @@ import { KalkulatorComponent } from './kalkulator/kalkulator.component';
 import {FormsModule} from "@angular/forms";
 import { WonderViewComponent } from './wonder-view/wonder-view.component';
 import { AuctionComponent } from './zadania/auction/auction.component';
+import { KantorComponent } from './zadania/kantor/kantor.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AuctionComponent } from './zadania/auction/auction.component';
     KalkulatorComponent,
     WonderViewComponent,
     AuctionComponent,
+    KantorComponent,
   ],
   imports: [
     BrowserModule,

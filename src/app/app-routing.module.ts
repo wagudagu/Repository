@@ -6,6 +6,7 @@ import {GamesComponent} from "./games/games.component";
 import {FormsComponent} from "./forms/forms.component";
 import {KalkulatorComponent} from "./kalkulator/kalkulator.component";
 import {WonderViewComponent} from "./wonder-view/wonder-view.component";
+import {BucketGameComponent} from "./zadania/bucket-game/bucket-game.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'kalkulator', component: KalkulatorComponent },
   { path: 'games', component: GamesComponent },
   { path: 'forms', component: FormsComponent },
+  { path: 'bucket', component: BucketGameComponent },
   { path: 'wonder', component: WonderViewComponent },
 ];
 

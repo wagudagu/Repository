@@ -14,6 +14,8 @@ import {FormsModule} from "@angular/forms";
 import { WonderViewComponent } from './wonder-view/wonder-view.component';
 import { AuctionComponent } from './zadania/auction/auction.component';
 import { KantorComponent } from './zadania/kantor/kantor.component';
+import { GuessComponent } from './zadania/guess/guess.component';
+import { BucketGameComponent } from './zadania/bucket-game/bucket-game.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { KantorComponent } from './zadania/kantor/kantor.component';
     WonderViewComponent,
     AuctionComponent,
     KantorComponent,
+    GuessComponent,
+    BucketGameComponent,
   ],
   imports: [
     BrowserModule,

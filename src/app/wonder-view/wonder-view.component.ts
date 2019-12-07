@@ -9,8 +9,7 @@ export class WonderViewComponent implements OnInit {
   inputtext: string;
   wynik: number;
 
-  guess: string;
-  wynikSprawdzenia: string;
+
 
   constructor() { }
 
@@ -25,17 +24,4 @@ export class WonderViewComponent implements OnInit {
 
   }
 
-  check() {
-    let nnn = parseInt(this.guess);
-    if (nnn == 500) {
-      //co wykonać jeśli trafiliśmy liczbę!
-    }
-    if (nnn > 500) {
-      //co ma być wykonane jeśli nnn > 500
-      this.wynikSprawdzenia = 'poszukiwana liczba jest mniejsza od ' + nnn;
-    } else {
-      //co wykonać w przeciwnym wypadku
-      this.wynikSprawdzenia = 'poszukiwana liczba jest większa od ' + nnn;
-    }
-  }
 }

@@ -1,7 +1,8 @@
 <div class="row no-gutters">
   <div class="col-md-6">
     <ul>
-      <li *ngFor="let b of buckets" (click)="bucketClicked(b)" [ngClass]="{'bg-info': b==selectedBucket}">
+      <li *ngFor="let b of buckets" (click)="bucketClicked(b)"
+          [ngClass]="{'bg-info': b==selectedBucket}">
         Wiadro -> pojemność: {{b.capacity}},  zawartość wody: {{b.content}}</li>
     </ul>
   </div>

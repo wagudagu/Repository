@@ -19,6 +19,7 @@ import { BucketGameComponent } from './zadania/bucket-game/bucket-game.component
 import { GuessNumberComponent } from './wonder-view/gry/guess-number/guess-number.component';
 import { PizzaComponent } from './wonder-view/gry/pizza/pizza.component';
 import { MtbShopComponent } from './mtb-shop/mtb-shop.component';
+import {TournamentComponent} from "./wonder-view/gry/tournament/tournament.component";
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MtbShopComponent } from './mtb-shop/mtb-shop.component';
     GuessNumberComponent,
     PizzaComponent,
     MtbShopComponent,
+    TournamentComponent,
   ],
   imports: [
     BrowserModule,

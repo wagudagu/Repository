@@ -1,0 +1,23 @@
+
+<div class="card">
+
+  <div class="card-header">Tournament {{liczba1}}</div>
+  <div class="card-body">
+    <p> Pierwszy wynik: {{wyniki[0]}}</p>
+    <p> Trzeci wynik: {{wyniki[2]}}</p>
+    <p> Liczba wyników: {{wyniki.length}}</p>
+    <table class="table table-hover">
+      <tbody>
+      <tr *ngFor="let w of wyniki">
+        <td> {{w}} </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-outline-info" (click)="sortuj_wyniki()">
+      sortuj</button>
+    <button class="btn btn-outline-info" (click)="add()">dodaj 100</button>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="row no-gutters">
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-header h4">Komentarze</div>
+      <div class="card-body">
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th> post</th>
+            <th> id</th>
+            <th> name</th>
+            <th> email</th>
+            <th> body</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of commentsView">
+            <td>{{c.postId}}</td>
+            <td>{{c.id}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.body}}</td>
+          </tr>
+        </tbody>
+      </table>
+        <button class="btn btn-outline-info" (click)="load_comments()">Load comments</button>
+        <button class="btn btn-outline-info" (click)="previous()"> < </button>
+        <button class="btn btn-outline-info" (click)="next()"> > </button>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+

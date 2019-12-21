@@ -4,7 +4,6 @@ export class BikePart {
   price: number;
   selected: boolean;
 
-
   constructor(id: number, name: string, price: number, selected: boolean) {
     this.id = id;
     this.name = name;

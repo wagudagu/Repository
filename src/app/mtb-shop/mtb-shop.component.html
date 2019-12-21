@@ -14,10 +14,11 @@
           </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let p of partCatalog" (click)="togglePart(p)" [ngClass]="{'bg-info': p.selected}">
+            <tr *ngFor="let p of partCatalog" (click)="togglePart(p)"
+                [ngClass]="{'bg-info': p.selected}">
               <td> {{p.id}}</td>
               <td> {{p.name}}</td>
-              <td> {{p.price}} --> {{p.selected}}</td>
+              <td> {{p.price}} </td>
             </tr>
           </tbody>
         </table>
@@ -25,7 +26,7 @@
 
       </div>
       <div class="card-footer">
-        Podsumowanie zamówienia: artykułów: koszt:
+        Podsumowanie zamówienia: artykułów: {{order_count()}} koszt: {{order_total()}}
         <button class="btn btn-outline-success">Suma...</button>
       </div>
     </div>

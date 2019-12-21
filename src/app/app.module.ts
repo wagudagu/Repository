@@ -20,6 +20,8 @@ import { GuessNumberComponent } from './wonder-view/gry/guess-number/guess-numbe
 import { PizzaComponent } from './wonder-view/gry/pizza/pizza.component';
 import { MtbShopComponent } from './mtb-shop/mtb-shop.component';
 import {TournamentComponent} from "./wonder-view/gry/tournament/tournament.component";
+import { CommentsComponent } from './comments/comments.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -40,11 +42,13 @@ import {TournamentComponent} from "./wonder-view/gry/tournament/tournament.compo
     PizzaComponent,
     MtbShopComponent,
     TournamentComponent,
+    CommentsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [MenuComponent],
   bootstrap: [AppComponent]

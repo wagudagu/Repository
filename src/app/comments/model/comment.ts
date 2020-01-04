@@ -6,7 +6,7 @@ export class Comment {
   body: string;
 }
 
-
+// to jest reprezentacja json obiektu typu "Comment"
 // {
 //   "postId": 1,
 //   "id": 1,

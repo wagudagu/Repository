@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class TournamentComponent implements OnInit {
   liczba1: number = 12;
   wyniki = [10, 5, 80, 11, 3]; //to jest tablica
+  nowy_wynik = 0;
 
   constructor() {
   }
@@ -20,7 +21,7 @@ export class TournamentComponent implements OnInit {
   }
 
   add() {
-    this.wyniki.push(100);
+    this.wyniki.push(this.nowy_wynik);
     //todo: spowodować, by do tablicy dodawało nie 100, tylko liczbę,
     //  którą user wpisał wcześniej w dodatkowe pole typu "input"
   }

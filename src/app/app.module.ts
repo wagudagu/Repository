@@ -22,6 +22,8 @@ import { MtbShopComponent } from './mtb-shop/mtb-shop.component';
 import {TournamentComponent} from "./wonder-view/gry/tournament/tournament.component";
 import { CommentsComponent } from './comments/comments.component';
 import {HttpClientModule} from "@angular/common/http";
+import { ModalsComponent } from './modals/modals.component';
+import { ResultsComponent } from './modals/results/results.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import {HttpClientModule} from "@angular/common/http";
     MtbShopComponent,
     TournamentComponent,
     CommentsComponent,
+    ModalsComponent,
+    ResultsComponent,
   ],
   imports: [
     BrowserModule,

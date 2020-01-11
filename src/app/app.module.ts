@@ -24,6 +24,7 @@ import { CommentsComponent } from './comments/comments.component';
 import {HttpClientModule} from "@angular/common/http";
 import { ModalsComponent } from './modals/modals.component';
 import { ResultsComponent } from './modals/results/results.component';
+import { TtableviewComponent } from './modals/ttableview/ttableview.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { ResultsComponent } from './modals/results/results.component';
     CommentsComponent,
     ModalsComponent,
     ResultsComponent,
+    TtableviewComponent,
   ],
   imports: [
     BrowserModule,
